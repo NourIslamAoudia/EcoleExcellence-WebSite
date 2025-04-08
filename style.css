@@ -93,10 +93,30 @@ nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+    background-image: url('20172548-une-groupe-de-asiatique-eleves-asseoir-et-faire-devoirs-et-rapport-dans-le-bibliotheque-gratuit-photo.jpg');
+    background-size: cover;
+    background-position: center;
     color: var(--white);
     padding: 150px 0 100px;
     text-align: center;
+    position: relative;
+}
+
+/* Option : Ajouter un filtre sombre sur l'image pour améliorer la lisibilité du texte */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Ajustez l'opacité selon vos besoins */
+    z-index: 1;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 2; /* Pour que le contenu soit au-dessus du filtre */
 }
 
 .hero h2 {
