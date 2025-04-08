@@ -862,4 +862,11 @@ footer {
         margin: 10px auto;
         max-width: 200px;
     }
+    .schedule-table {
+        width: 100%;
+        display: block;
+        overflow-x: hidden; /* Désactive le scroll horizontal */
+    }
+    
+    
 }
