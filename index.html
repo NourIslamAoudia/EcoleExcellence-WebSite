@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>École Excellence - Soutien Scolaire de Qualité à Alger Centre</title>
+        <meta name="description" content="École privée de soutien scolaire à Didouche Mourad, Alger Centre. Cours de qualité pour primaire, collège et lycée avec enseignants expérimentés.">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+        <link rel="icon" href="education.png" type="image/x-icon">
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="logo.jpg" alt="Logo École Excellence">
+                <div class="logo-text">
+                    <h1>École Excellence</h1>
+                    <p>Soutien scolaire à Alger Centre</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="#teachers">Professeurs</a></li>
+                    <li><a href="#schedule">Horaires & Niveaux</a></li>
+                    <li><a href="#pricing">Tarifs</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2>Excellence Académique à Alger Centre</h2>
+            <p>Notre école privée de soutien scolaire à Didouche Mourad offre un accompagnement personnalisé pour aider vos enfants à réussir leur parcours scolaire, du primaire au lycée.</p>
+            <a href="#contact" class="cta-button">Nous contacter</a>
+            <a href="#pricing" class="cta-button secondary">Voir nos tarifs</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pourquoi choisir notre école ?</h2>
+                <p>Découvrez ce qui fait la différence de notre établissement de soutien scolaire au cœur d'Alger.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>Enseignants qualifiés</h3>
+                    <p>Nos professeurs sont diplômés et expérimentés dans leur matière, avec une pédagogie adaptée à chaque élève.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Groupes réduits</h3>
+                    <p>Classes de 6 à 8 élèves maximum pour un suivi personnalisé et une meilleure interaction.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Localisation idéale</h3>
+                    <p>Située en plein Alger Centre (Didouche Mourad), notre école est facilement accessible.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Notre École</h2>
+                    <p>Fondée en 2010, l'École Excellence s'est rapidement imposée comme une référence en matière de soutien scolaire à Alger Centre. Notre mission est d'accompagner chaque élève vers la réussite scolaire en comblant ses lacunes et en renforçant ses compétences.</p>
+                    <p>Notre méthode pédagogique repose sur une approche individualisée, adaptée au rythme et aux besoins spécifiques de chaque enfant. Nous croyons en une éducation bienveillante mais exigeante, qui valorise les efforts et encourage la progression.</p>
+                    <p>Nos locaux modernes et équipés offrent un environnement propice à l'apprentissage, avec des salles de classe lumineuses et des espaces de travail conviviaux.</p>
+                </div>
+                <div class="about-image">
+                    <img src="ecole-scolaire-collectivite-service-e1634810710566.jpg" alt="École Excellence à Didouche Mourad">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers Section -->
+    <section class="teachers" id="teachers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Professeurs</h2>
+                <p>Découvrez notre équipe pédagogique composée d'enseignants passionnés et expérimentés.</p>
+            </div>
+            <div class="teachers-grid">
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="enseignant-mathematiques-tableau.jpg" alt="Professeur de mathématiques">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>M. Karim Bensaid</h3>
+                        <p>Mathématiques - 15 ans d'expérience</p>
+                        <p>Diplômé de l'École Polytechnique</p>
+                    </div>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="professeur-francais.jpg" alt="Professeur de français">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Mme. Leila Mansouri</h3>
+                        <p>Français - 12 ans d'expérience</p>
+                        <p>Docteure en Littérature Française</p>
+                    </div>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="GettyImages-1402076608-1024x683.jpg" alt="Professeur de sciences">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>M. Samir Khelifi</h3>
+                        <p>Sciences Physiques - 10 ans d'expérience</p>
+                        <p>Ingénieur en Génie Physique</p>
+                    </div>
+                </div>
+                <div class="teacher-card">
+                    <div class="teacher-image">
+                        <img src="enseignement-danglais.jpg" alt="Professeur d'anglais">
+                    </div>
+                    <div class="teacher-info">
+                        <h3>Mme. Yasmina Cherif</h3>
+                        <p>Anglais - 8 ans d'expérience</p>
+                        <p>Master en Linguistique Anglaise</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule" id="schedule">
+        <div class="container">
+            <div class="section-title">
+                <h2>Horaires par Niveau</h2>
+                <p>Retrouvez nos créneaux horaires adaptés à chaque cycle scolaire.</p>
+            </div>
+            <div class="levels">
+                <button class="level-tab active" data-level="primary">Primaire</button>
+                <button class="level-tab" data-level="middle">Collège</button>
+                <button class="level-tab" data-level="high">Lycée</button>
+            </div>
+            <div class="schedule-content">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Jour</th>
+                            <th>Matin</th>
+                            <th>Après-midi</th>
+                            <th>Soirée</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lundi</td>
+                            <td>-</td>
+                            <td>14h - 16h</td>
+                            <td>17h - 19h</td>
+                        </tr>
+                        <tr>
+                            <td>Mardi</td>
+                            <td>-</td>
+                            <td>14h - 16h</td>
+                            <td>17h - 19h</td>
+                        </tr>
+                        <tr>
+                            <td>Mercredi</td>
+                            <td>9h - 11h</td>
+                            <td>14h - 16h</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Jeudi</td>
+                            <td>-</td>
+                            <td>14h - 16h</td>
+                            <td>17h - 19h</td>
+                        </tr>
+                        <tr>
+                            <td>Vendredi</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>17h - 19h</td>
+                        </tr>
+                        <tr>
+                            <td>Samedi</td>
+                            <td>9h - 11h</td>
+                            <td>14h - 16h</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-title">
+                <h2>Nos Tarifs</h2>
+                <p>Des formules adaptées à tous les besoins et budgets.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Formule Basique</h3>
+                    <div class="price">8,000 DA <span>/mois</span></div>
+                    <ul class="pricing-features">
+                        <li>2 matières au choix</li>
+                        <li>2 séances par semaine</li>
+                        <li>Groupes de 6-8 élèves</li>
+                        <li>Suivi mensuel</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">S'inscrire</a>
+                </div>
+                <div class="pricing-card popular">
+                    <div class="popular-tag">Populaire</div>
+                    <h3>Formule Standard</h3>
+                    <div class="price">12,000 DA <span>/mois</span></div>
+                    <ul class="pricing-features">
+                        <li>3 matières au choix</li>
+                        <li>3 séances par semaine</li>
+                        <li>Groupes de 4-6 élèves</li>
+                        <li>Suivi personnalisé</li>
+                        <li>Bilan trimestriel</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">S'inscrire</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Formule Intensive</h3>
+                    <div class="price">18,000 DA <span>/mois</span></div>
+                    <ul class="pricing-features">
+                        <li>Toutes matières</li>
+                        <li>5 séances par semaine</li>
+                        <li>Groupes de 2-4 élèves</li>
+                        <li>Suivi hebdomadaire</li>
+                        <li>Préparation aux examens</li>
+                        <li>Cours particuliers inclus</li>
+                    </ul>
+                    <a href="#contact" class="cta-button">S'inscrire</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Témoignages</h2>
+                <p>Ce que disent les parents et élèves de notre école.</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Mon fils a fait des progrès remarquables en mathématiques depuis qu'il suit les cours à l'École Excellence. Les enseignants sont à l'écoute et savent motiver les élèves."</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="etu1.jpg" alt="Parent d'élève">
+                        </div>
+                        <div class="author-info">
+                            <h4>M. Ahmed Kaci</h4>
+                            <p>Parent d'élève en 4ème année moyenne</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Les cours d'anglais ont complètement transformé ma fille qui était très timide. Elle a pris confiance en elle et ses notes ont augmenté de 3 points en un trimestre."</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="etu2.jpg" alt="Parent d'élève">
+                        </div>
+                        <div class="author-info">
+                            <h4>Mme. Salima Boukadoum</h4>
+                            <p>Parent d'élève en 2ème année secondaire</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"J'ai adoré les cours de physique avec M. Samir. Il explique très bien et prend le temps de répondre à toutes nos questions. Grâce à lui, j'ai eu 17/20 au bac."</p>
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="etu3.jpg" alt="Élève">
+                        </div>
+                        <div class="author-info">
+                            <h4>Yanis Belkacem</h4>
+                            <p>Ancien élève - Terminale Scientifique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Galerie Photos</h2>
+                <p>Découvrez nos locaux et l'ambiance de travail à l'École Excellence.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="istockphoto-1448272566-612x612.jpg" alt="Salle de classe">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="tous-les-soirs-les-enfants-du-quartier-participent-a-l-aide-aux-devoirs-pour-une-seance-entre-0-80-et-1-80-ph-vm-j-m-1559151167.jpg" alt="Salle de sciences">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="canape-mediatheque-bibliotheque-idm-library-s-1.jpg" alt="Événement scolaire">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="istockphoto-1588288383-612x612.jpg" alt="Élèves en cours">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="soutien.jpg" alt="Espace bibliothèque">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img_medium.jpg" alt="Espace bibliothèque">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="mobilier-accueil-3@2x.jpg" alt="Espace accueil">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="ecole-soutien-continent-asiatique.jpg" alt="Espace accueil">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="section-title">
+            <h2>Contactez-nous</h2>
+            <p>Pour toute question ou inscription, n'hésitez pas à nous contacter.</p>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h3>Coordonnées</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Adresse</h4>
+                            <p>Rue Didouche Mourad, Alger Centre</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Téléphone</h4>
+                            <p><a href="tel:+213561234567">+213 561 23 45 67</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/213561234567">Envoyer un message</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p><a href="mailto:contact@ecolealgercentre.dz">contact@ecolealgercentre.dz</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div id="map" class="map"></div>
+            </div>
+            <div class="contact-form">
+                <h3>Envoyez-nous un message</h3>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="nom">Nom</label>
+                        <input type="text" id="nom" name="nom" class="form-control" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" class="form-control" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+    
+        <!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>École Excellence - Depuis 2010</h3>
+            <p>Soutien scolaire de qualité à Alger Centre. Une pédagogie individualisée pour accompagner chaque élève vers la réussite, dans un cadre moderne et bienveillant.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Liens utiles</h3>
+            <ul class="footer-links">
+                <li><a href="#">Accueil</a></li>
+                <li><a href="#">À propos</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Suivez-nous</h3>
+            <ul class="footer-links">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 ProPros. Tous droits réservés.<br> Développé par <strong>Aoudia Nour Islam</strong></p>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script>
+    // Attendre que le DOM soit chargé
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialiser la carte
+        var map = L.map('map').setView([36.7538, 3.0588], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+        L.marker([36.7538, 3.0588]).addTo(map)
+            .bindPopup('École Excellence - Didouche Mourad')
+            .openPopup();
+            
+        // Formulaire - alerte simple
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            alert("Merci pour votre message ! Nous vous répondrons rapidement.");
+            this.reset();
+        });
+        // Données des horaires pour chaque niveau
+    const scheduleData = {
+        primary: [
+            { day: 'Lundi', morning: '-', afternoon: '14h - 16h', evening: '17h - 19h' },
+            { day: 'Mardi', morning: '-', afternoon: '14h - 16h', evening: '17h - 19h' },
+            { day: 'Mercredi', morning: '9h - 11h', afternoon: '14h - 16h', evening: '-' },
+            { day: 'Jeudi', morning: '-', afternoon: '14h - 16h', evening: '17h - 19h' },
+            { day: 'Vendredi', morning: '-', afternoon: '-', evening: '17h - 19h' },
+            { day: 'Samedi', morning: '9h - 11h', afternoon: '14h - 16h', evening: '-' }
+        ],
+        middle: [
+            { day: 'Lundi', morning: '-', afternoon: '15h - 17h', evening: '18h - 20h' },
+            { day: 'Mardi', morning: '-', afternoon: '15h - 17h', evening: '18h - 20h' },
+            { day: 'Mercredi', morning: '10h - 12h', afternoon: '15h - 17h', evening: '-' },
+            { day: 'Jeudi', morning: '-', afternoon: '15h - 17h', evening: '18h - 20h' },
+            { day: 'Vendredi', morning: '-', afternoon: '-', evening: '18h - 20h' },
+            { day: 'Samedi', morning: '10h - 12h', afternoon: '15h - 17h', evening: '-' }
+        ],
+        high: [
+            { day: 'Lundi', morning: '-', afternoon: '16h - 18h', evening: '19h - 21h' },
+            { day: 'Mardi', morning: '-', afternoon: '16h - 18h', evening: '19h - 21h' },
+            { day: 'Mercredi', morning: '11h - 13h', afternoon: '16h - 18h', evening: '-' },
+            { day: 'Jeudi', morning: '-', afternoon: '16h - 18h', evening: '19h - 21h' },
+            { day: 'Vendredi', morning: '-', afternoon: '-', evening: '19h - 21h' },
+            { day: 'Samedi', morning: '11h - 13h', afternoon: '16h - 18h', evening: '-' }
+        ]
+    };
+
+    // Fonction pour mettre à jour le tableau
+    function updateScheduleTable(level) {
+        const tableBody = document.querySelector('.schedule-table tbody');
+        tableBody.innerHTML = '';
+        
+        scheduleData[level].forEach(row => {
+            tableBody.innerHTML += `
+                <tr>
+                    <td>${row.day}</td>
+                    <td>${row.morning}</td>
+                    <td>${row.afternoon}</td>
+                    <td>${row.evening}</td>
+                </tr>
+            `;
+        });
+    }
+
+    // Gestionnaire d'événements pour les onglets
+    const levelTabs = document.querySelectorAll('.level-tab');
+    levelTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            // Retirer la classe active de tous les onglets
+            levelTabs.forEach(t => t.classList.remove('active'));
+            
+            // Ajouter la classe active à l'onglet cliqué
+            this.classList.add('active');
+            
+            // Mettre à jour le tableau avec les données du niveau sélectionné
+            const level = this.getAttribute('data-level');
+            updateScheduleTable(level);
+        });
+    });
+
+    // Initialiser avec le niveau primaire (qui est actif par défaut)
+    updateScheduleTable('primary');
+    });
+    
+    // Fonction pour défiler jusqu'à la section contact
+    function scrollToContact() {
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+ 
+                        
+                            
