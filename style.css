@@ -863,21 +863,3 @@ footer {
         max-width: 200px;
     }
 }
-
-@media (max-width: 576px) {
-    .levels {
-        flex-direction: column;
-    }
-    
-    .level-tab {
-        border-radius: 0;
-    }
-    
-    .level-tab:first-child {
-        border-radius: 5px 5px 0 0;
-    }
-    
-    .level-tab:last-child {
-        border-radius: 0 0 5px 5px;
-    }
-}
