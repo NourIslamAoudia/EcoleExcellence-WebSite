@@ -31,7 +31,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="mobile-menu">
-                    <i class="fas fa-bars"></i>
+                    <span></span>
                 </div>
             </nav>
         </div>
@@ -483,6 +483,44 @@
 <script>
     // Attendre que le DOM soit chargé
     document.addEventListener('DOMContentLoaded', function () {
+        const mobileMenuButton = document.querySelector('.mobile-menu');
+    const navMenu = document.querySelector('nav ul');
+    const body = document.body;
+    
+    // Fonction pour gérer le menu mobile
+    mobileMenuButton.addEventListener('click', function() {
+        // Basculer la classe active sur le bouton du menu
+        this.classList.toggle('active');
+        
+        // Basculer la classe show sur le menu
+        navMenu.classList.toggle('show');
+        
+        // Empêcher le défilement du corps lorsque le menu est ouvert
+        if (navMenu.classList.contains('show')) {
+            body.style.overflow = 'hidden';
+        } else {
+            body.style.overflow = '';
+        }
+    });
+    
+    // Fermer le menu mobile lorsqu'un élément du menu est cliqué
+    const navLinks = document.querySelectorAll('nav ul li a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            navMenu.classList.remove('show');
+            mobileMenuButton.classList.remove('active');
+            body.style.overflow = '';
+        });
+    });
+    
+    // Fermer le menu mobile lors du redimensionnement de la fenêtre
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 768 && navMenu.classList.contains('show')) {
+            navMenu.classList.remove('show');
+            mobileMenuButton.classList.remove('active');
+            body.style.overflow = '';
+        }
+    });
         // Initialiser la carte
         var map = L.map('map').setView([36.7538, 3.0588], 13);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
