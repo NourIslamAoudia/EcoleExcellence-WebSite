@@ -867,6 +867,10 @@ footer {
         display: block;
         overflow-x: hidden; /* Désactive le scroll horizontal */
     }
+    .schedule-table th, 
+    .schedule-table td {
+        font-size: 14px; /* Taille de police plus petite */
+    }
     
     
 }
